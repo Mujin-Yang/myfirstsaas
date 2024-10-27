@@ -1,7 +1,7 @@
 import mongoose, { Mongoose } from "mongoose";
 
 const MONGODB_URL = process.env.NEXT_PUBLIC_MONGODB_URI
-let isConnected = false;
+//let isConnected = false;
 // track the connection
 
 //下是新增

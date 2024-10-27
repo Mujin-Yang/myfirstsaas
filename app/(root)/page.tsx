@@ -1,5 +1,5 @@
 import React from 'react'
-import { SignInButton, SignedIn, SignedOut, UserButton} from '@clerk/nextjs'
+import { SignInButton, SignedOut} from '@clerk/nextjs'
 
 
 const Home = () => {
