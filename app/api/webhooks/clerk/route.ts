@@ -67,38 +67,40 @@ export async function POST(req: Request) {
       clerkId: id,
       email: email_addresses[0].email_address,
       username: username!,
-      firstName: first_name,
-      lastName: last_name,
+      firstName: first_name ?? "",
+      lastName: last_name ?? "",
       photo: image_url,
     };
-    //@ts-expect-error
         const newUser = await createUser(user);
 
     // Set public metadata
     if (newUser) {
-        //@ts-expect-error
-      await clerkClient.users.updateUserMetadata(id, {
+      // 获取 ClerkClient 实例
+      const client = await clerkClient();
+      //这个错误表明 clerkClient 的类型是 () => Promise<ClerkClient>，而不是直接的 ClerkClient 实例，因此不能直接访问 users 属性。需要先等待 clerkClient 被解析为 ClerkClient 对象，才能访问其中的 users 属性。
+      await client.users.updateUserMetadata(id, {
         publicMetadata: {
           userId: newUser._id,
         },
       });
     }
 
+
     return NextResponse.json({ message: "OK", user: newUser });
   }
+
 
   // UPDATE
   if (eventType === "user.updated") {
     const { id, image_url, first_name, last_name, username } = evt.data;
 
     const user = {
-      firstName: first_name,
-      lastName: last_name,
+      firstName: first_name ?? "",
+      lastName: last_name ?? "",
       username: username!,
       photo: image_url,
     };
 
-    //@ts-expect-error
       const updatedUser = await updateUser(id, user);
 
     return NextResponse.json({ message: "OK", user: updatedUser });
