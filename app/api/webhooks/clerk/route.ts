@@ -71,12 +71,12 @@ export async function POST(req: Request) {
       lastName: last_name,
       photo: image_url,
     };
-    // @ts-ignore
+    //@ts-expect-error
         const newUser = await createUser(user);
 
     // Set public metadata
     if (newUser) {
-        // @ts-ignore
+        //@ts-expect-error
       await clerkClient.users.updateUserMetadata(id, {
         publicMetadata: {
           userId: newUser._id,
@@ -98,7 +98,7 @@ export async function POST(req: Request) {
       photo: image_url,
     };
 
-    // @ts-ignore
+    //@ts-expect-error
       const updatedUser = await updateUser(id, user);
 
     return NextResponse.json({ message: "OK", user: updatedUser });
