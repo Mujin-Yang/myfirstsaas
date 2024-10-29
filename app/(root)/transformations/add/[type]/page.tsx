@@ -9,7 +9,8 @@ import {redirect} from "next/navigation";
 
 //在 Next.js 中，当你定义一个页面组件（如 AddTransformationsPage）时，Next.js 会自动为这个组件提供 props。这些 props 通常来自于路由参数、查询参数或页面初始化时的数据获取（例如 getStaticProps 或 getServerSideProps）。
 
-const AddTransformationsPage = async ({ params }: { params: { type: string } }) => {
+
+const AddTransformationsPage = async ({ params }: {params: Promise<any>}) => {
    //解构赋值：({params:{type}}) 是对传入的 props 进行解构赋值。这意味着它期望 props 中有一个名为 params 的对象，而该对象中又有一个名为 type 的属性。这种写法使得从 props 中提取需要的属性更加简洁。
     // 类型注释：:SearchParamProps 是对 props 的类型定义，表示该组件期望的 props 的结构符合 SearchParamProps 类型。这有助于 TypeScript 在编译时检查类型，减少运行时错误。
     //结果：最终，你可以直接使用 type 变量，它的值就是 params 中的 type 属性的值。
@@ -19,11 +20,11 @@ const AddTransformationsPage = async ({ params }: { params: { type: string } }) 
     //      return userId;
     // }
     // 等待获取 params
-    const { type } = await params;
+
     //具体来说，params 会根据文件路径来解析 URL 中的动态部分。
 
     const { userId } = await auth(); // 使用 await 等待 auth() 的结果
-
+    const { type } = await params;
     if(!userId) redirect('sign-in');
     const user = await getUserById(userId);
 
