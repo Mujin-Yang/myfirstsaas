@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc738c5a-84a5-4a41-837b-a9366bf72d72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/MobileNav.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constants/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/actions/user.actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/database/models/image.model.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/database/models/transaction.model.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/database/models/user.model.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/database/mongoose.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fonts/GeistMonoVF.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fonts/GeistVF.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/webhooks/clerk/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/webhooks/clerk/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/actions/user.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions/user.actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/database/mongoose.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/database/mongoose.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +39,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -123,7 +112,8 @@
       <workItem from="1729784671209" duration="1240000" />
       <workItem from="1729920951280" duration="15276000" />
       <workItem from="1729938785606" duration="3727000" />
-      <workItem from="1730016812203" duration="17672000" />
+      <workItem from="1730016812203" duration="29669000" />
+      <workItem from="1730141460516" duration="8914000" />
     </task>
     <servers />
   </component>

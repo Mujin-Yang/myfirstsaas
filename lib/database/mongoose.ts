@@ -28,10 +28,9 @@ export const connectToDatabase = async () => {
     //如果 cached.promise 已经存在，说明连接正在进行中，直接使用它。如果不存在，则尝试创建新的连接。
     //如果 cached.promise 是 null 或 undefined，则调用 mongoose.connect 来建立新的连接。
     try{
-    cached.promise = cached.promise || mongoose.connect(
-        MONGODB_URL,
-        {bufferCommands: false}
-    )
+    cached.promise = cached.promise || mongoose.connect(MONGODB_URL ,{
+        dbName:"myfirstSaaS",
+        bufferCommands: false,})
 
     cached.conn = await cached.promise;
 
