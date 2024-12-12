@@ -25,7 +25,7 @@ const AddTransformationsPage = async ({ params }: {params: Promise<any>}) => {
 
     const { userId } = await auth(); // 使用 await 等待 auth() 的结果
     const { type } = await params;
-    if(!userId) redirect('sign-in');
+    if(!userId) redirect('/sign-in');
     const user = await getUserById(userId);
 
     const transformation = transformationTypes[type as TransformationTypeKey];

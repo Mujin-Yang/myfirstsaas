@@ -1,6 +1,5 @@
 'use client'
 import {useToast} from "@/hooks/use-toast";
-import {Button} from "@/components/ui/button";
 import {CldImage, CldUploadWidget} from "next-cloudinary";
 import Image from "next/image";
 import {dataUrl, getImageSize} from "@/lib/utils";
@@ -9,13 +8,14 @@ import {PlaceholderValue} from "next/dist/shared/lib/get-img-props";
 type MediaUploaderProps = {
     onValueChange:(value:string) => void;
     setImage: React.Dispatch<any>;
+    title: string;
     publicId:string;
     image:any;
     type:string;
 }
 
 
-const MediaUploader = ({onValueChange, setImage, publicId, image, type}:MediaUploaderProps) => {
+const MediaUploader = ({onValueChange, setImage, title, publicId, image, type}:MediaUploaderProps) => {
     const { toast } = useToast()
 
     const onUploadSuccessHandler = (result:any) => {
@@ -24,10 +24,12 @@ const MediaUploader = ({onValueChange, setImage, publicId, image, type}:MediaUpl
             publicId:result?.info?.public_id,
             width:result?.info?.width,
             height:result?.info?.height,
-            secureUrl:result?.info?.secureUrl,
+            secureUrl:result?.info?.secure_url,
         }))
 
         onValueChange(result?.info?.public_id);
+        // 很重要，否则图片加载不出来
+
 
         toast({
           title: "Image uploaded successfully",
@@ -36,7 +38,7 @@ const MediaUploader = ({onValueChange, setImage, publicId, image, type}:MediaUpl
           className:'success-toast'
         })
     };
-    const onUploadErrorHandler = (result:any) => {
+    const onUploadErrorHandler = () => {
          toast({
           title: "Something went wrong while Uploading",
           description: "Please Try Again",
@@ -51,8 +53,11 @@ const MediaUploader = ({onValueChange, setImage, publicId, image, type}:MediaUpl
             uploadPreset="myfirstSaaS"
             //这个名字要和 cloudinary 网站创建的一样
             options={{
-            multiple:false,
-            resourceType:"image"}}
+                 multiple:false,
+                 resourceType:"image",
+                 context: { alt: title, caption: title },
+                 tags: [title]// 将 title 作为图片的 context
+            }}
             onSuccess={onUploadSuccessHandler}
             onError={onUploadErrorHandler}
         >
