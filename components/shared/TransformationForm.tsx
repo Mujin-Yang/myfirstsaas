@@ -32,9 +32,6 @@ import {AspectRatioKey, deepMergeObjects} from "@/lib/utils";
 import {debounce} from "@/lib/utils";
 import TransformedImage from "@/components/shared/TransformedImage";
 import {getCldImageUrl} from "next-cloudinary";
-import {
-    value
-} from "../../../../../../../opt/anaconda3/lib/python3.12/site-packages/bokeh/server/static/js/lib/styles/widgets/palette_select.css";
 import {addImage, updateImage} from "@/lib/actions/image.action";
 import {InsufficientCreditsModal} from "@/components/shared/InsufficientCreditsModel";
 import {updateCredits} from "@/lib/actions/user.actions";

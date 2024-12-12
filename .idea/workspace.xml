@@ -5,31 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc738c5a-84a5-4a41-837b-a9366bf72d72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/api/webhooks/stripe/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/Checkout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/Collection.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/DeleteConfirmation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/InsufficientCreditsModel.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/Search.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/TransformedImage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/actions/image.action.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/actions/transaction.action.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/credits/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/credits/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/profile/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/profile/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/transformations/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/transformations/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/transformations/[id]/update/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/transformations/[id]/update/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/transformations/add/[type]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/transformations/add/[type]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/MediaUploader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/MediaUploader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/TransformationForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/TransformationForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/database/models/image.model.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/database/models/image.model.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/index.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +116,7 @@
       <workItem from="1733300946146" duration="8099000" />
       <workItem from="1733331281704" duration="47192000" />
       <workItem from="1733484003236" duration="7312000" />
-      <workItem from="1733989845356" duration="7805000" />
+      <workItem from="1733989845356" duration="8221000" />
     </task>
     <servers />
   </component>
