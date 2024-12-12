@@ -1,9 +1,6 @@
 "use client"
 import React from "react";
 import Image from "next/image";
-import {
-    button
-} from "../../../../../../../opt/anaconda3/lib/python3.12/site-packages/bokeh/server/static/js/lib/core/dom";
 import {dataUrl, debounce, download, getImageSize} from "@/lib/utils";
 import {PlaceholderValue} from "next/dist/shared/lib/get-img-props";
 import {CldImage, getCldImageUrl} from "next-cloudinary";
